@@ -56,7 +56,6 @@ body{
     display: flex;
     justify-items: center;
     padding: 20px;
-    width: 300px;
     height: 200px;
 }
 
@@ -64,7 +63,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    align-items: center;
 
 }
 footer{
@@ -97,9 +97,16 @@ footer{
 
 }
 @media (min-width:768px){
-    .videoCoach{
-        width: 775px;
-        height: 300px
+    .videoCoach iframe{
+        width: 560px;
+        height: 315px
+    }
+    section{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        justify-content: flex-start;
     }
     nav{
         justify-content: space-around;
@@ -111,6 +118,8 @@ footer{
     }
     .botones{
         align-items: center;
+        flex-direction: row;
+        justify-content: center;
     }
     .botones button{
         width: 25%;
@@ -129,6 +138,15 @@ footer{
             width: 775px;
             height: 300px
         }
+        .botones{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .listNav li{
+            font-size: 18px;
+            font-weight: 600;
+        }
         .botones button{
             width: 50%;
         }
@@ -139,24 +157,44 @@ footer{
         }
         section{
             display: flex;
-            justify-content: space-between;
             align-items: center;
             width: 100%;
             height: 100vh;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
         }
     }
     @media (min-width:1440px){
         .tituloHome h2{
             font-size: 80px;
         }
+        .listNav li{
+            font-size: 25px;
+            font-weight: 600;
+        }
         .tituloHome h3{
             font-size: 70px;
         }
         .videoCoach video{
-            width: 775px;
-            height: 300px
+            width: 700px;
+            height: 360px;
         }
         .botones button{
             width: 50%;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .botones{
+            gap: 30px;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
         }
 }
