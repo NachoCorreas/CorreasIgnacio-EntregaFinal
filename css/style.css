@@ -57,7 +57,7 @@ main{
 }
 .titulo{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
 .btn{
     background-color: #F79327;
@@ -66,15 +66,19 @@ main{
     font-family: 'Rubik', sans-serif;
 
 }
+
 .tituloHome{
     width: 100%;
     margin-top: 10px;
-    gap: 5px;
+    gap: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
 
 }   
+.tituloHome p{
+    border-radius: 5px;
+}
 .tituloHome h2{
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -91,6 +95,11 @@ main{
 				0px  1px 0px white,
 				-1px  0px 0px white,
 				0px -1px 0px white;
+}
+.textoHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .txtHome{
     font-family: 'Rubik', sans-serif;
@@ -151,17 +160,91 @@ footer{
         font-weight: 600;
         margin:20px;
     }
+    .textoHome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoHome p{
+        border-radius: 5px;
+    }
+
     footer{
         justify-content: space-between;
         position: fixed;
         bottom: 0;
     }
     @media (min-width:1024px){
+        .listNav li{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .tituloNav h1{
+            font-size: 50px;
+        }
         .tituloHome h2{
-            font-size: 80px;
+            font-size: 90px;
         }
         .tituloHome h3{
-            font-size: 70px;
+            font-size: 80px;
+        }
+        .tituloHome{
+            padding: 10px;
+        }
+        .txtHome{
+            font-size: 25px;
+            padding: 5px;
+        }
+        .txtHome2{
+            font-size: 20px;
+        }
+        .btn{
+            font-size: 30px;
+        }
+        .textoHome{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textoHome p{
+            border-radius: 5px;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
         }
     }
 }
+    @media (min-width:1440px){
+        .listNav li{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .tituloNav h1{
+            font-size: 80px;
+        }
+        .tituloHome h2{
+            font-size: 90px;
+        }
+        .tituloHome h3{
+            font-size: 80px;
+        }
+        .txtHome{
+            font-size: 35px;
+            padding: 5px;
+        }
+        .txtHome2{
+            font-size: 35px;
+        }
+        .btn{
+            font-size: 30px;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
+        }
+    }
