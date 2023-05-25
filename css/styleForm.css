@@ -1,0 +1,319 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    list-style: none;
+}
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.315);
+    /* position: sticky;
+    top: 0; */
+
+}
+
+.logoNav{
+    padding: 10px;
+
+}
+.tituloNav a{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #F79327 ;
+    text-decoration: none;
+}
+.tituloNav h1  :hover{
+    color: black;
+}
+nav{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+    align-items: center;
+
+}
+.listNav{
+    display: grid;
+    gap: 5px;
+}
+.listNav li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+.listNav li a:hover{
+    color: #F79327;
+}
+body{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/fondos/PortadaJordan.jpg);
+}
+main{
+    height: auto;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    background-color: #F79327;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.tituloHome{
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.tituloHome p{
+    border-radius: 5px;
+}
+.tituloHome h2{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+	font-family: 'Sedgwick Ave Display', cursive;
+	text-shadow: 1px  0px 0px white,
+				0px  1px 0px white,
+				-1px  0px 0px white,
+				0px -1px 0px white;
+}
+.tituloHome h3{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+	font-family: 'Sedgwick Ave Display', cursive;	text-shadow: 1px  0px 0px white,
+				0px  1px 0px white,
+				-1px  0px 0px white,
+				0px -1px 0px white;
+}
+.textoHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.txtHome{
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(173, 216, 230, 0.555);
+    color: black;
+    padding: 20px ;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.txtHome2{
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(173, 216, 230, 0.555);
+    color: black;
+    padding: 5px ;
+    margin-top: 5px;
+}
+.encontranos{
+	display: flex;
+    flex-direction: column;
+	background-color: #f2f2f267;
+    justify-content: center;
+}
+
+.formulario{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+	font-family: 'Sedgwick Ave Display', cursive;
+	font-size: 50px;
+	color: #000000;
+	display: flex;
+    gap: 10px;
+	flex-direction: column;
+	justify-content: space-around;
+	text-shadow: 1px  0px 0px white,
+				0px  1px 0px white,
+				-1px  0px 0px white,
+				0px -1px 0px white;
+}
+
+form {
+        background-color: #e6e6e6;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+		margin-right: 532px;
+}
+input[type=text], input[type=email], input[type=tel] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+}
+input[type=submit]:hover {
+        background-color: #45a049;
+}
+
+label {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-weight: bold;
+}
+
+footer{
+    display: flex;
+    background-color: #d9d9d970;
+    width: 100%;
+
+}
+.footer{
+    text-align: left;
+    font-size: 10px;
+}
+.redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    font-size: 10px;
+}
+.redes ul li img{
+    width: 20px;
+}
+
+@media (min-width:768px){
+    .listNav{
+        display: flex;
+        gap: 30px;
+        margin-right: 10px;
+    }
+    .tituloNav{
+        text-align: center;
+    }
+    .tituloHome h2{
+        font-size: 60px;
+    }
+    .tituloHome h3{
+        font-size: 50px;
+    }
+    .txtHome{
+        padding: 10px;
+    }
+    .txtHome2{
+        font-weight: 600;
+        margin:20px;
+    }
+    .textoHome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoHome p{
+        border-radius: 5px;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    footer{
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+    }
+    @media (min-width:1024px){
+        .listNav li{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .tituloNav h1{
+            font-size: 50px;
+        }
+        .tituloHome h2{
+            font-size: 90px;
+        }
+        .tituloHome h3{
+            font-size: 80px;
+        }
+        .tituloHome{
+            padding: 10px;
+        }
+        .txtHome{
+            font-size: 25px;
+            padding: 5px;
+        }
+        .txtHome2{
+            font-size: 20px;
+        }
+        .btn{
+            font-size: 30px;
+        }
+        .textoHome{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textoHome p{
+            border-radius: 5px;
+        }
+        .formulario{
+            flex-direction: row;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
+        }
+    }
+}
+    @media (min-width:1440px){
+        .listNav li{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .tituloNav h1{
+            font-size: 80px;
+        }
+        .tituloHome h2{
+            font-size: 90px;
+        }
+        .tituloHome h3{
+            font-size: 80px;
+        }
+        .txtHome{
+            font-size: 35px;
+            padding: 5px;
+        }
+        .txtHome2{
+            font-size: 35px;
+        }
+        .btn{
+            font-size: 30px;
+        }
+        .redes ul li{
+            font-size: 20px;
+        }
+        .footer p{
+            font-size: 20px;
+        }
+    }
