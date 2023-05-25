@@ -47,10 +47,81 @@ nav{
 }
 body{
     width: 100%;
-	height: 100vh;
+	height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/img/fondos/fondoCourt.jpg);
+}
+.store{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.377);
+}
+.titulostore{
+    color: #F79327;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+.titulostore h2{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.titulostore p{
+    font-family: 'Rubik', sans-serif;
+}
+
+.retroShop picture h2{
+	font-family: 'Sedgwick Ave Display', cursive;
+	text-align: center;
+	float: center;
+	font-size: 20px;
+	color: #F67000	;
+	letter-spacing: 2px;
+	text-shadow: 1px  0px 0px black,
+				0px  1px 0px black,
+				-1px  0px 0px black,
+				0px -1px 0px black;
+}
+.retroShop picture img{
+	border-radius: 10px;
+	border: 3px solid;
+	border-color: #f3edea;
+	
+}
+.retroShop picture a :hover{
+	opacity: 0.5;
+}
+
+.retroShop{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap:20px;
+	justify-content:center;
+}
+
+/* .retroShop{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap:20px;
+	justify-content:center;
+} */
+.imgStoreL{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+}
+
+.imgStoreR{
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: center;
+	gap: 10px;
 }
 footer{
     display: flex;
@@ -73,6 +144,55 @@ footer{
 .redes ul li img{
     width: 20px;
 }
-.card img{
-    object-fit: cover;
+
+@media (max-width:768px){
+    .retroShop{
+	display: flex;
+	flex-direction: row;
+    gap: 40px;
+    }
+   
+    footer{
+        justify-content: space-between;
+    }
+}
+@media (min-width:1024px){
+    .retroShop{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        }
+        .listNav li{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .listNav{
+            display: flex;
+            gap: 30px;
+            margin-right: 10px;
+        }
+        picture img{
+            width:300px ;
+            height: 200px;
+        }
+}
+@media (min-width:1440px){
+    .retroShop{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        }
+        .listNav li{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .listNav{
+            display: flex;
+            gap: 30px;
+            margin-right: 10px;
+        }
+        picture img{
+            width:400px ;
+            height: 300px;
+        }
 }
