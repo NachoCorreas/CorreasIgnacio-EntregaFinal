@@ -98,7 +98,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	gap:20px;
+	gap:10px;
 	justify-content:center;
 }
 
@@ -149,12 +149,7 @@ footer{
 }
 
 @media (max-width:768px){
-    .retroShop{
-	display: flex;
-	flex-direction: row;
-    gap: 40px;
-    }
-   
+    
     footer{
         justify-content: space-between;
     }
