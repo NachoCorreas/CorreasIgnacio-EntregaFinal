@@ -58,7 +58,13 @@ body{
     padding: 20px;
     height: 200px;
 }
-
+.btn a{
+    color: beige;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F79327;
+    border-radius:10px;
+}
 .botones{
     width: 100%;
     display: flex;

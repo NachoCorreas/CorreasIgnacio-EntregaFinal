@@ -58,6 +58,13 @@ main{
     display: flex;
     flex-direction: column;
 }
+.btn a{
+    color: beige;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F79327;
+    border-radius:10px;
+}
 .btn{
     background-color: #F79327;
     color: aliceblue;

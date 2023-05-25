@@ -55,6 +55,13 @@ body{
 main{
     height: auto;
 }
+.btn a{
+    color: beige;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F79327;
+    border-radius:10px;
+}
 .titulo{
     display: flex;
     flex-direction: column;
@@ -120,7 +127,8 @@ footer{
     display: flex;
     background-color: #d9d9d970;
     width: 100%;
-   
+    position: fixed;
+    bottom: 0;
 }
 .footer{
     text-align: left;
