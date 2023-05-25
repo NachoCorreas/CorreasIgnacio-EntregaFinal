@@ -52,63 +52,45 @@ body{
     background-repeat: no-repeat;
     background-image: url(../assets/img/fondos/fondoCourt.jpg);
 }
-.store{
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.377);
-}
-.titulostore{
-    color: #F79327;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.retroshoes{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:center;
     align-items: center;
-    flex-direction: column;
-}
-.titulostore h2{
-    font-family: 'Sedgwick Ave Display', cursive;
-}
-.titulostore p{
-    font-family: 'Rubik', sans-serif;
+
+
 }
 
-.retroShop picture h2{
+
+.retroshoes picture h2{
 	font-family: 'Sedgwick Ave Display', cursive;
 	text-align: center;
 	float: center;
-	font-size: 20px;
-	color: #F67000	;
+	font-size: 30px;
+	color: #F79327;
 	letter-spacing: 2px;
-	text-shadow: 1px  0px 0px black,
-				0px  1px 0px black,
-				-1px  0px 0px black,
-				0px -1px 0px black;
+    background-color: rgba(0, 255, 255, 0.37);
 }
-.retroShop picture img{
+.retroshoes picture img{
 	border-radius: 10px;
 	border: 3px solid;
 	border-color: #f3edea;
 	
 }
-.retroShop picture a :hover{
+.retroshoes picture a :hover{
 	opacity: 0.5;
 }
 
-.retroShop{
+.retroshoes{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	gap:20px;
+    gap: 10px;
 	justify-content:center;
 }
 
-/* .retroShop{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap:20px;
-	justify-content:center;
-} */
-.imgStoreL{
+.conversecinteiner{
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
@@ -116,18 +98,26 @@ body{
 	gap: 10px;
 }
 
-.imgStoreR{
+.nikeconteiner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.adidasconteiner{
 	display: flex;
 	flex-direction: column;
 	justify-content: right;
 	align-items: center;
 	gap: 10px;
 }
+
 footer{
     display: flex;
-    background-color: #d9d9d970;
+    background-color: #d9d9d9d2;
     width: 100%;
-   
+    color: #f3edea;
 }
 .footer{
     text-align: left;
@@ -146,22 +136,27 @@ footer{
 }
 
 @media (max-width:768px){
-    .retroShop{
-	display: flex;
-	flex-direction: row;
-    gap: 40px;
-    }
-   
     footer{
         justify-content: space-between;
     }
 }
 @media (min-width:1024px){
-    .retroShop{
+    .retroshoes{
         display: flex;
         flex-direction: row;
         gap: 40px;
+        padding: 10px;
+
         }
+        body{
+            height: 100vh;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            justify-content: space-between;
+        }
+        
         .listNav li{
             font-size: 18px;
             font-weight: 600;
@@ -173,17 +168,17 @@ footer{
         }
         picture img{
             width:300px ;
-            height: 200px;
+            height: 300px;
         }
 }
 @media (min-width:1440px){
-    .retroShop{
+    .retroshoes{
         display: flex;
         flex-direction: row;
         gap: 40px;
         }
         .listNav li{
-            font-size: 18px;
+            font-size: 25px;
             font-weight: 600;
         }
         .listNav{
@@ -192,7 +187,13 @@ footer{
             margin-right: 10px;
         }
         picture img{
-            width:500px ;
+            width:450px ;
             height: 400px;
+        }
+        .redes li{
+            font-size: 20px;
+        }
+        .footer{
+            font-size: 20px;
         }
 }
