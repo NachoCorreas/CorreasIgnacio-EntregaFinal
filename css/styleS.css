@@ -128,6 +128,8 @@ footer{
     display: flex;
     background-color: #d9d9d970;
     width: 100%;
+    position: fixed;
+    bottom: 0;
    
 }
 .footer{
