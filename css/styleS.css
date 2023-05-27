@@ -12,10 +12,18 @@ header{
     top: 0; */
 
 }
+.letraNav{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: beige;
+}
 
 .logoNav{
     padding: 10px;
     
+}
+.miColor{
+    background-color: #f66f0054;
 }
 .tituloNav a{
     font-family: 'Sedgwick Ave Display', cursive;
@@ -84,13 +92,14 @@ body{
 				-1px  0px 0px black,
 				0px -1px 0px black;
 }
+
 .retroShop picture img{
 	border-radius: 10px;
 	border: 3px solid;
 	border-color: #f3edea;
 	
 }
-.retroShop picture a :hover{
+.btnImg:hover{
 	opacity: 0.5;
 }
 
@@ -128,8 +137,8 @@ footer{
     display: flex;
     background-color: #d9d9d970;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
    
 }
 .footer{
@@ -172,6 +181,12 @@ footer{
         picture img{
             width:300px ;
             height: 200px;
+        }
+        footer li{
+            font-size: 20px;
+        }
+        footer p{
+            font-size: 20px;
         }
 }
 @media (min-width:1440px){

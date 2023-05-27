@@ -10,7 +10,14 @@ header{
     background-color: rgba(173, 216, 230, 0.315);
     /* position: sticky;
     top: 0; */
-
+}
+.miColor{
+    background-color: #f66f0085;
+}
+.letraNav{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: beige;
 }
 
 .logoNav{

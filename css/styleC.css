@@ -12,6 +12,14 @@ header{
     top: 0; */
 
 }
+.miColor{
+    background-color: #f66f0085;
+}
+.letraNav{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: beige;
+}
 
 .logoNav{
     padding: 10px;
