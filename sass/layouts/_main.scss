@@ -1,0 +1,40 @@
+main{
+    height: auto;
+    .titulo{
+        display: flex;
+        flex-direction: column;}
+        .tituloHome{
+            width: 100%;
+            margin-top: 10px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+	            font-family: 'Sedgwick Ave Display', cursive;
+	            text-shadow: 1px  0px 0px white,
+				            0px  1px 0px white,
+				            -1px  0px 0px white,
+				            0px -1px 0px white;
+            }
+            h3{
+                @extend h2
+            }
+        }
+    }
+    .textoHome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .txtHome{
+            font-weight: 600;
+        margin:20px;
+        }
+    }
+

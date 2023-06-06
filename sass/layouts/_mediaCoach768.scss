@@ -1,0 +1,43 @@
+@media (max-width:768px){
+    .videoCoach{
+        justify-content: center;
+    }
+
+}
+@media (min-width:768px){
+    .videoCoach iframe{
+        width: 560px;
+        height: 315px
+    }
+    section{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        justify-content: flex-start;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    .listNav{
+        display: flex;
+        gap: 20px;
+        margin-right: 10px;
+    }
+    .botones{
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .botones button{
+        width: 25%;
+        
+    }
+    footer{
+        justify-content: space-between;
+    }
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+}

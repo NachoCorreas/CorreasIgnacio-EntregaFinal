@@ -1,0 +1,14 @@
+@import "./base/reset";
+@import "./base/typo.scss";
+@import "./layouts/header";
+@import "./layouts/body";
+@import "./layouts/main";
+@import "./components/botones";
+@import "./layouts/footer";
+@import "./layouts/mainCoach";
+
+
+@import "./layouts/media1024px";
+@import "./layouts/media1420px";
+@import "./layouts/mediaCoach1024px";
+@import "./layouts/mediaCoach768";
