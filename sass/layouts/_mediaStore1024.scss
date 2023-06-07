@@ -1,0 +1,37 @@
+@media (min-width:1024px){
+    .retroshoes{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding: 10px;
+
+        }
+        footer li{
+            font-size: 20px;
+        }
+        footer p{
+            font-size: 20px;
+        }
+        body{
+            height: 100vh;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            justify-content: space-between;
+        }
+        
+        .listNav li{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .listNav{
+            display: flex;
+            gap: 30px;
+            margin-right: 10px;
+        }
+        picture img{
+            width:300px ;
+            height: 300px;
+        }
+}

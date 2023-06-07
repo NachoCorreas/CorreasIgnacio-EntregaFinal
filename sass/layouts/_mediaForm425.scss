@@ -1,0 +1,14 @@
+@media (max-width:425px) {
+    .encontranos{
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .textoHome p{
+        border-radius: 5px;
+    }
+
+}
