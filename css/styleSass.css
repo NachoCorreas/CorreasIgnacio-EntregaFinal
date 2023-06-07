@@ -156,7 +156,7 @@ footer {
     footer .redes ul li img {
       width: 20px; }
 
-main section .videoCoach {
+main .coach .videoCoach {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -218,6 +218,54 @@ label {
   margin-bottom: 8px;
   font-weight: bold; }
 
+.retroshoes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .retroshoes .conversecinteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 10px; }
+  .retroshoes .nikeconteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+  .retroshoes .adidasconteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 10px; }
+  .retroshoes picture h2, .retroshoes picture main .tituloHome h3, main .tituloHome .retroshoes picture h3 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    float: center;
+    font-size: 30px;
+    color: #F79327;
+    letter-spacing: 2px;
+    background-color: rgba(0, 255, 255, 0.37); }
+  .retroshoes picture img {
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #f3edea; }
+  .retroshoes picture :hover {
+    opacity: 0.5; }
+
+@media (max-width: 425px) {
+  .encontranos .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .textoHome p {
+    border-radius: 5px; } }
+
 @media (min-width: 1024px) {
   .tituloHome h2, main .tituloHome h3 {
     font-size: 120px; }
@@ -237,98 +285,12 @@ label {
     border-radius: 5px;
     font-size: 25px;
     padding: 5px; }
-  .redes ul li {
-    font-size: 20px; }
-  footer p {
-    font-size: 20px; } }
-
-@media (min-width: 1440px) {
-  .titulo h2, .titulo main .tituloHome h3, main .tituloHome .titulo h3 {
-    font-size: 90px; }
-  .titulo h3 {
-    font-size: 80px; }
-  .textohome p {
-    font-size: 35px;
-    padding: 5px; }
-  .txtHome {
-    font-size: 35px; }
-  .boton {
-    font-size: 30px; }
-  .redes ul li {
-    font-size: 20px; }
-  footer p {
-    font-size: 20px; } }
-
-@media (min-width: 1024px) {
-  .videoCoach video {
-    width: 775px;
-    height: 300px; }
-  .botones {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; }
-  .listNav li {
-    font-size: 18px;
-    font-weight: 600; }
-  .botones button {
-    width: 50%; }
-  .listNav {
-    display: flex;
-    gap: 30px;
-    margin-right: 10px; }
-  section {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100vh; }
-  .redes ul li {
-    font-size: 20px; }
-  .footer p {
-    font-size: 20px; } }
-
-@media (max-width: 768px) {
-  .videoCoach {
-    justify-content: center; } }
-
-@media (min-width: 768px) {
-  .videoCoach iframe {
-    width: 560px;
-    height: 315px; }
-  section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-    justify-content: flex-start; }
-  nav {
-    justify-content: space-around; }
-  .listNav {
-    display: flex;
-    gap: 20px;
-    margin-right: 10px; }
-  .botones {
-    align-items: center;
-    flex-direction: row;
-    justify-content: center; }
-  .botones button {
-    width: 25%; }
-  footer {
-    justify-content: space-between; }
-  body {
-    box-sizing: border-box;
-    overflow-x: hidden; } }
-
-@media (max-width: 768px) {
-  footer {
-    justify-content: space-between; } }
-
-@media (min-width: 1024px) {
   .retroshoes {
     display: flex;
     flex-direction: row;
     gap: 40px;
     padding: 10px; }
-  footer li {
+  .redes ul li {
     font-size: 20px; }
   footer p {
     font-size: 20px; }
@@ -338,80 +300,16 @@ label {
     position: fixed;
     bottom: 0;
     justify-content: space-between; }
+  picture img {
+    width: 300px;
+    height: 300px; }
+  .listNav {
+    display: flex;
+    gap: 30px;
+    margin-right: 10px; }
   .listNav li {
     font-size: 18px;
     font-weight: 600; }
-  .listNav {
-    display: flex;
-    gap: 30px;
-    margin-right: 10px; }
-  picture img {
-    width: 300px;
-    height: 300px; } }
-
-@media (min-width: 1440px) {
-  .retroshoes {
-    display: flex;
-    flex-direction: row;
-    gap: 40px; }
-  .listNav li {
-    font-size: 25px;
-    font-weight: 600; }
-  .listNav {
-    display: flex;
-    gap: 30px;
-    margin-right: 10px; }
-  picture img {
-    width: 450px;
-    height: 400px; }
-  .redes li {
-    font-size: 20px; }
-  .footer {
-    font-size: 20px; } }
-
-@media (max-width: 425px) {
-  .encontranos .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .textoHome p {
-    border-radius: 5px; } }
-
-@media (min-width: 768px) {
-  .listNav {
-    display: flex;
-    gap: 30px;
-    margin-right: 10px; }
-  .tituloNav {
-    text-align: center; }
-  .tituloHome h2, main .tituloHome h3 {
-    font-size: 60px; }
-  .tituloHome h3 {
-    font-size: 50px; }
-  .txtHome {
-    padding: 10px; }
-  .txtHome2 {
-    font-weight: 600;
-    margin: 20px; }
-  .textoHome {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .textoHome p {
-    border-radius: 5px; }
-  iframe {
-    width: 300px;
-    height: 300px; }
-  footer {
-    justify-content: space-between; } }
-
-@media (min-width: 1024px) {
-  .listNav li {
-    font-size: 20px;
-    font-weight: 600; }
-  .tituloNav h1 {
-    font-size: 50px; }
   .tituloHome h2, main .tituloHome h3 {
     font-size: 90px; }
   .tituloHome h3 {
@@ -433,29 +331,98 @@ label {
     border-radius: 5px; }
   .formulario {
     flex-direction: row; }
-  .redes ul li {
-    font-size: 20px; }
-  .footer p {
-    font-size: 20px; } }
+  .videoCoach video {
+    width: 775px;
+    height: 300px; }
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .coach {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh; } }
+
+@media (max-width: 768px) {
+  .videoCoach {
+    justify-content: center; } }
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: space-around; }
+  .listNav {
+    display: flex;
+    gap: 20px;
+    margin-right: 10px; }
+  .videoCoach iframe {
+    width: 560px;
+    height: 315px; }
+  .coach {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    justify-content: flex-start; }
+  .botones {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; }
+  .botones button {
+    width: 25%; }
+  .tituloHome h2, main .tituloHome h3 {
+    font-size: 60px; }
+  .tituloHome h3 {
+    font-size: 50px; }
+  .txtHome {
+    padding: 10px; }
+  .txtHome2 {
+    font-weight: 600;
+    margin: 20px; }
+  .textoHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .textoHome p {
+    border-radius: 5px; }
+  iframe {
+    width: 300px;
+    height: 300px; }
+  footer {
+    justify-content: space-between; }
+  body {
+    box-sizing: border-box;
+    overflow-x: hidden; } }
 
 @media (min-width: 1440px) {
+  .listNav {
+    display: flex;
+    gap: 30px;
+    margin-right: 10px; }
   .listNav li {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600; }
-  .tituloNav h1 {
-    font-size: 80px; }
-  .tituloHome h2, main .tituloHome h3 {
+  .titulo h2, .titulo main .tituloHome h3, main .tituloHome .titulo h3 {
     font-size: 90px; }
-  .tituloHome h3 {
+  .titulo h3 {
     font-size: 80px; }
-  .txtHome {
+  .textohome p {
     font-size: 35px;
     padding: 5px; }
-  .txtHome2 {
-    font-size: 35px; }
   .btn {
     font-size: 30px; }
+  .txtHome {
+    font-size: 35px; }
+  .boton {
+    font-size: 30px; }
+  .retroshoes {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; }
+  picture img {
+    width: 450px;
+    height: 400px; }
   .redes ul li {
     font-size: 20px; }
-  .footer p {
+  footer p {
     font-size: 20px; } }

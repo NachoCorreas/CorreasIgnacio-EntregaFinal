@@ -27,10 +27,83 @@
         font-size: 25px;
         padding: 5px;
     }
+    .retroshoes{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding: 10px;}
+
     .redes ul li{
         font-size: 20px;
     }
     footer p{
         font-size: 20px;
+    }
+
+    body{
+        height: 100vh;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        justify-content: space-between;
+    }
+    picture img{
+        width:300px ;
+        height: 300px;
+    }
+    .listNav{
+        display: flex;
+        gap: 30px;
+        margin-right: 10px;
+    }
+    .listNav li{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .tituloHome h2{
+        font-size: 90px;
+    }
+    .tituloHome h3{
+        font-size: 80px;
+    }
+    .tituloHome{
+        padding: 10px;
+    }
+    .txtHome{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .txtHome2{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 30px;
+    }
+    .textoHome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoHome p{
+        border-radius: 5px;
+    }
+    .formulario{
+        flex-direction: row;
+    }
+    .videoCoach video{
+        width: 775px;
+        height: 300px
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .coach{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
     }
 }
