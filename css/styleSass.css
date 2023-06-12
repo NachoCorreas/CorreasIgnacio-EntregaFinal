@@ -1,42 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.letraNav {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  color: white; }
-
-.txtHome {
-  font-family: 'Rubik', sans-serif;
-  background-color: rgba(173, 216, 230, 0.555);
-  color: black;
-  padding: 20px;
-  margin-top: 10px;
-  font-weight: 700; }
-
 header {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  background-color: rgba(173, 216, 230, 0.315); }
-  header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center; }
+  background-color: #607d8b75; }
+
+.promo {
+  background: linear-gradient(90deg, #B3E5FC 30%, #757575 90%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  box-shadow: 1px 9px 27px 0px rgba(0, 0, 0, 0.75); }
+  .promo h1 {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 700; }
+  .promo h3 {
+    color: #011411;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px; }
+
+.tracking-in-contract-bck-top {
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+
+.text-flicker-in-glow {
+  -webkit-animation: text-flicker-in-glow 4s linear both;
+  animation: text-flicker-in-glow 4s linear both; }
+
+@keyframes text-flicker-in-glow {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0;
+    text-shadow: none; }
+  10.1% {
+    opacity: 1;
+    text-shadow: none; }
+  10.2% {
+    opacity: 0;
+    text-shadow: none; }
+  20% {
+    opacity: 0;
+    text-shadow: none; }
+  20.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25); }
+  20.6% {
+    opacity: 0;
+    text-shadow: none; }
+  30% {
+    opacity: 0;
+    text-shadow: none; }
+  30.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.5% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  30.6% {
+    opacity: 0;
+    text-shadow: none; }
+  45% {
+    opacity: 0;
+    text-shadow: none; }
+  45.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25); }
+  55.1% {
+    opacity: 0;
+    text-shadow: none; }
+  57% {
+    opacity: 0;
+    text-shadow: none; }
+  57.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35); }
+  60.1% {
+    opacity: 0;
+    text-shadow: none; }
+  65% {
+    opacity: 0;
+    text-shadow: none; }
+  65.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1); }
+  75.1% {
+    opacity: 0;
+    text-shadow: none; }
+  77% {
+    opacity: 0;
+    text-shadow: none; }
+  77.1% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1); }
+  85.1% {
+    opacity: 0;
+    text-shadow: none; }
+  86% {
+    opacity: 0;
+    text-shadow: none; }
+  86.1% {
+    opacity: 1;
+    text-shadow: 4px 4px 2px #FF9800, 4px 4px 8px #FF9800, 4px 4px 8px #FF9800, 4px 4px 8px #FF9800; }
+  100% {
+    opacity: 1;
+    text-shadow: 4px 4px 8px #FF9800, 4px 4px 8px #FF9800, 4px 4px 8px #FF9800, 4px 4px 8px #FF9800; } }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; }
+  nav .letraNav {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: black; }
 
 body {
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #8BC6EC;
-  background-image: linear-gradient(0deg, #8BC6EC 34%, #e57c23 100%); }
+  height: 100vh; }
 
 main {
-  height: auto; }
+  height: auto;
+  background: linear-gradient(to bottom, #051937, #005274, #008f8e, #5fca80, #f9f871); }
   main .titulo {
     display: flex;
     flex-direction: column; }
@@ -49,7 +179,7 @@ main {
     flex-direction: column; }
     main .tituloHome h2, main .tituloHome h3 {
       font-size: 30px;
-      color: black;
+      color: #FF5722;
       font-family: 'Sedgwick Ave Display', cursive;
       text-shadow: 1px  0px 0px white, 0px  1px 0px white, -1px  0px 0px white, 0px -1px 0px white; }
 
@@ -57,12 +187,47 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .textoHome p {
-    border-radius: 5px;
-    padding: 10px; }
   .textoHome .txtHome {
     font-weight: 600;
     margin: 20px; }
+  .textoHome p {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    background-color: #add8e68e;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: -14px 13px 22px 8px #F79327; }
+
+.fotos {
+  border-radius: 20px;
+  box-shadow: -14px 13px 22px 8px #515A5A; }
+
+.txtHome {
+  font-family: 'Rubik', sans-serif;
+  background-color: rgba(173, 216, 230, 0.555);
+  color: black;
+  padding: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  box-shadow: -14px 13px 22px 8px #F79327; }
+
+.newsletters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #F79327;
+  align-items: center; }
+  .newsletters .marcas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px; }
+  .newsletters div h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700; }
 
 .boton a {
   color: beige;
@@ -73,6 +238,9 @@ main {
   padding: 5px; }
   .boton a:hover {
     background-color: #010d14; }
+
+button {
+  margin-bottom: 20px; }
 
 .shake-horizontal {
   -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
@@ -139,10 +307,7 @@ main {
 
 footer {
   display: flex;
-  background-color: #d9d9d970;
-  width: 100%;
-  position: fixed;
-  bottom: 0; }
+  background-color: #d9d9d970; }
   footer p {
     text-align: left;
     font-size: 10px; }
@@ -218,6 +383,35 @@ label {
   margin-bottom: 8px;
   font-weight: bold; }
 
+.enviarMail {
+  width: 315px;
+  margin: 35px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+  .enviarMail form {
+    margin-top: 20px;
+    width: 100%; }
+  .enviarMail input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; }
+  .enviarMail button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+  .enviarMail button[type="submit"]:hover {
+    background-color: #45a049; }
+
 .retroshoes {
   display: flex;
   flex-direction: column;
@@ -268,9 +462,9 @@ label {
 
 @media (min-width: 1024px) {
   .tituloHome h2, main .tituloHome h3 {
-    font-size: 120px; }
+    font-size: 150px; }
   .tituloHome h3 {
-    font-size: 100px; }
+    font-size: 130px; }
   .titulo div {
     padding: 10px; }
   .txtHome {
@@ -290,6 +484,9 @@ label {
     flex-direction: row;
     gap: 40px;
     padding: 10px; }
+  .fotos {
+    width: 400px;
+    height: 500px; }
   .redes ul li {
     font-size: 20px; }
   footer p {
@@ -297,8 +494,6 @@ label {
   body {
     height: 100vh; }
   footer {
-    position: fixed;
-    bottom: 0;
     justify-content: space-between; }
   picture img {
     width: 300px;
@@ -370,10 +565,10 @@ label {
     justify-content: center; }
   .botones button {
     width: 25%; }
-  .tituloHome h2, main .tituloHome h3 {
-    font-size: 60px; }
+  .titulo .tituloHome h2, .titulo main .tituloHome h3, main .titulo .tituloHome h3 {
+    font-size: 100px; }
   .tituloHome h3 {
-    font-size: 50px; }
+    font-size: 90px; }
   .txtHome {
     padding: 10px; }
   .txtHome2 {
@@ -403,9 +598,9 @@ label {
     font-size: 25px;
     font-weight: 600; }
   .titulo h2, .titulo main .tituloHome h3, main .tituloHome .titulo h3 {
-    font-size: 90px; }
+    font-size: 150px; }
   .titulo h3 {
-    font-size: 80px; }
+    font-size: 130px; }
   .textohome p {
     font-size: 35px;
     padding: 5px; }
@@ -422,6 +617,8 @@ label {
   picture img {
     width: 450px;
     height: 400px; }
+  .enviarMail {
+    width: 400px; }
   .redes ul li {
     font-size: 20px; }
   footer p {

@@ -1,5 +1,6 @@
 main{
     height: auto;
+    background: $bg-main;
     .titulo{
         display: flex;
         flex-direction: column;}
@@ -12,7 +13,7 @@ main{
             flex-direction: column;
             h2{
                 font-size: 30px;
-                color: rgb(0, 0, 0);
+                color:#FF5722;
 	            font-family: 'Sedgwick Ave Display', cursive;
 	            text-shadow: 1px  0px 0px white,
 				            0px  1px 0px white,
@@ -28,13 +29,54 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        p{
-            border-radius: 5px;
-            padding: 10px;
-        }
         .txtHome{
             font-weight: 600;
         margin:20px;
         }
+        p{
+            font-family: 'Bangers', cursive;
+            letter-spacing: 2px;
+            background-color: #add8e68e;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: -14px 13px 22px 8px #F79327;
+        }
+    
     }
+    .fotos{
+            border-radius: 20px;
+            box-shadow: -14px 13px 22px 8px #515A5A;
+        }
+       
+        .txtHome{
+            font-family: 'Rubik', sans-serif;
+            background-color: rgba(173, 216, 230, 0.555);
+            color: black;
+            padding: 20px ;
+            margin-top: 10px;
+            font-weight: 700;
+            box-shadow: -14px 13px 22px 8px #F79327;}
 
+.newsletters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #F79327;
+    align-items: center;
+    .marcas{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    div{
+        h4{
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
+    

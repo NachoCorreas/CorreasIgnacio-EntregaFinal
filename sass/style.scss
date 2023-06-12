@@ -1,3 +1,4 @@
+@import "./utilities/variables";
 @import "./base/reset";
 @import "./base/typo.scss";
 @import "./layouts/header";
@@ -9,7 +10,7 @@
 @import "./layouts/mainForm";
 @import "./components/formularios";
 @import "./layouts/mainShoes";
-
+@import "./base/typo.scss";
 
 
 

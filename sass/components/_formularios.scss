@@ -33,3 +33,41 @@ label {
     margin-bottom: 8px;
     font-weight: bold;
 }
+
+// search
+.enviarMail {
+    width: 315px;
+    margin: 35px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    form {
+        margin-top: 20px;
+        width:100%;
+      }
+      
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+}
