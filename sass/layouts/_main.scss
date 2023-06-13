@@ -58,18 +58,12 @@ main{
             box-shadow: -14px 13px 22px 8px #F79327;}
 
 .newsletters{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex(row,wrap,center,center,none);
     width: 100%;
     background-color: #F79327;
-    align-items: center;
     .marcas{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,center,10px);
         align-content: center;
-        align-items: center;
-        gap: 10px;
         padding: 10px;
     }
     div{

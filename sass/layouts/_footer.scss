@@ -8,10 +8,7 @@ footer{
     .redes{
         ul{
             list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            gap: 5px;
+            @include flex(row,none,space-around,none,5px);
             font-size: 10px;
             li{
                 img{

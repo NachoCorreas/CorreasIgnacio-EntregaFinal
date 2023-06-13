@@ -11,18 +11,27 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 100%;
   background-color: #607d8b75; }
 
 .promo {
   background: linear-gradient(90deg, #B3E5FC 30%, #757575 90%);
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-end;
+  gap: 10px;
   padding: 10px;
   box-shadow: 1px 9px 27px 0px rgba(0, 0, 0, 0.75); }
   .promo h1 {
@@ -158,6 +167,7 @@ nav {
   nav .letraNav {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+    font-size: medium;
     color: black; }
 
 body {
@@ -213,17 +223,21 @@ main {
 
 .newsletters {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
   width: 100%;
-  background-color: #F79327;
-  align-items: center; }
+  background-color: #F79327; }
   .newsletters .marcas {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    flex-wrap: none;
+    justify-content: none;
     align-items: center;
     gap: 10px;
+    align-content: center;
     padding: 10px; }
   .newsletters div h4 {
     font-family: 'Rubik', sans-serif;
@@ -315,7 +329,9 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: none;
     justify-content: space-around;
+    align-items: none;
     gap: 5px;
     font-size: 10px; }
     footer .redes ul li img {
@@ -616,7 +632,7 @@ label {
     gap: 40px; }
   picture img {
     width: 450px;
-    height: 400px; }
+    height: 600px; }
   .enviarMail {
     width: 400px; }
   .redes ul li {
