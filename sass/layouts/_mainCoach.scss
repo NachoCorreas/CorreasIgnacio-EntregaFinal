@@ -1,10 +1,36 @@
 main{
 .coach{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:
+        "video video video botones"
+        "video video video botones"
+        "video video video botones"
+        "texto texto texto texto";
+
     .videoCoach{
+    grid-area: video;
     display: flex;
     justify-content: center;
     padding: 20px;
     height: 200px;
     }
 }
+}
+.CoachTxt{
+    p{
+        font-size: large;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: texto;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    border-radius: 5px;
+        padding: 10px;
+        background-color:$bg-footer;
+
 }

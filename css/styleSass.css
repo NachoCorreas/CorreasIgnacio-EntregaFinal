@@ -201,6 +201,7 @@ main {
     font-weight: 600;
     margin: 20px; }
   .textoHome p {
+    color: black;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     background-color: #add8e68e;
@@ -209,6 +210,7 @@ main {
     box-shadow: -14px 13px 22px 8px #F79327; }
 
 .fotos {
+  padding: 20px;
   border-radius: 20px;
   box-shadow: -14px 13px 22px 8px #515A5A; }
 
@@ -307,6 +309,7 @@ button {
     transform: translateX(-8px); } }
 
 .botones {
+  grid-area: botones;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -337,11 +340,30 @@ footer {
     footer .redes ul li img {
       width: 20px; }
 
-main .coach .videoCoach {
+main .coach {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "video video video botones" "video video video botones" "video video video botones" "texto texto texto texto"; }
+  main .coach .videoCoach {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 200px; }
+
+.CoachTxt {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  height: 200px; }
+  align-items: center;
+  grid-area: texto;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #d9d9d970; }
+  .CoachTxt p {
+    font-size: large; }
 
 .encontranos {
   background-color: #f2f2f267; }
@@ -428,44 +450,66 @@ label {
   .enviarMail button[type="submit"]:hover {
     background-color: #45a049; }
 
-.retroshoes {
+.retroshoes, .retroshoes .nikeconteiner {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: none;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 30px; }
   .retroshoes .conversecinteiner {
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     justify-content: left;
-    align-items: center;
-    gap: 10px; }
-  .retroshoes .nikeconteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px; }
   .retroshoes .adidasconteiner {
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     justify-content: right;
     align-items: center;
     gap: 10px; }
-  .retroshoes picture h2, .retroshoes picture main .tituloHome h3, main .tituloHome .retroshoes picture h3 {
-    font-family: 'Sedgwick Ave Display', cursive;
-    text-align: center;
-    float: center;
-    font-size: 30px;
-    color: #F79327;
-    letter-spacing: 2px;
-    background-color: rgba(0, 255, 255, 0.37); }
-  .retroshoes picture img {
+  .retroshoes picture img, .retroshoes .nikeconteiner picture img {
     border-radius: 10px;
     border: 3px solid;
     border-color: #f3edea; }
   .retroshoes picture :hover {
-    opacity: 0.5; }
+    transform: scale(1.1); }
+
+.despliegue {
+  width: 50%;
+  background-color: #FF9800; }
+  .despliegue li {
+    font-size: medium; }
+
+.card-title {
+  font-weight: 500;
+  font-size: large; }
+
+.ingreso img:hover {
+  transform: scale(1.1); }
+
+.card-text {
+  font-size: medium; }
+
+.card-body {
+  background-color: #FF9800; }
+
+.centrado {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; }
+
+@media (max-width: 425px) {
+  main .coach {
+    display: grid;
+    grid-template-areas: "video video video video" "botones botones botones botones" "botones botones botones botones" "texto texto texto texto"; } }
 
 @media (max-width: 425px) {
   .encontranos .formulario {
@@ -477,6 +521,15 @@ label {
     border-radius: 5px; } }
 
 @media (min-width: 1024px) {
+  .despliegue {
+    width: 100%; }
+  .centrado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
   .tituloHome h2, main .tituloHome h3 {
     font-size: 150px; }
   .tituloHome h3 {
@@ -495,7 +548,7 @@ label {
     border-radius: 5px;
     font-size: 25px;
     padding: 5px; }
-  .retroshoes {
+  .retroshoes, .retroshoes .nikeconteiner {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -551,9 +604,18 @@ label {
     gap: 20px; }
   .coach {
     display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: flex-start; }
+  .botones {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100vh; } }
+    justify-content: center; }
+  .CoachTxt {
+    font-size: larger;
+    text-align: center; } }
 
 @media (max-width: 768px) {
   .videoCoach {
@@ -570,17 +632,21 @@ label {
     width: 560px;
     height: 315px; }
   .coach {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 55px;
     justify-content: flex-start; }
   .botones {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
     justify-content: center; }
+  .CoachTxt {
+    font-size: larger;
+    text-align: center; }
   .botones button {
-    width: 25%; }
+    width: 200px; }
   .titulo .tituloHome h2, .titulo main .tituloHome h3, main .titulo .tituloHome h3 {
     font-size: 100px; }
   .tituloHome h3 {
@@ -626,7 +692,21 @@ label {
     font-size: 35px; }
   .boton {
     font-size: 30px; }
-  .retroshoes {
+  .coach {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: flex-start; }
+  .botones {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .videoCoach iframe {
+    width: 900px;
+    height: 412px; }
+  .retroshoes, .retroshoes .nikeconteiner {
     display: flex;
     flex-direction: row;
     gap: 40px; }

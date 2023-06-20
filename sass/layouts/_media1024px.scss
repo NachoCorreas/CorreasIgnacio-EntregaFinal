@@ -1,4 +1,10 @@
 @media (min-width:1024px){
+    .despliegue{
+        width: 100%;
+    }
+    .centrado{
+        @include flex(row,none,center,center,40px);
+    }
     .tituloHome{
         h2{
             font-size: 150px;
@@ -104,8 +110,19 @@
     }
     .coach{
         display: flex;
+         flex-direction: column;
+         gap: 55px;
+         justify-content: flex-start;
+     }
+     .botones{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        width: 100%;
-        height: 100vh;
-    }
+        justify-content: center;
+     }
+     .CoachTxt{
+        font-size: larger;
+        text-align: center;
+     }
 }

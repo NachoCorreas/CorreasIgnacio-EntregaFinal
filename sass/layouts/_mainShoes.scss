@@ -1,48 +1,27 @@
 .retroshoes{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content:center;
-    align-items: center;
+    margin-bottom: 10px;
+    @include flex(column,none,center,center,30px);
     .conversecinteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        gap: 10px;
+
+        @include flex(column,none,left,center,10px);
     }
     
     .nikeconteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+    @extend .retroshoes    
     }
+
     .adidasconteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        align-items: center;
-        gap: 10px;
+        @include flex(column,none,right,center,10px);
     }
     picture{
-        h2{
-            font-family: 'Sedgwick Ave Display', cursive;
-	text-align: center;
-	float: center;
-	font-size: 30px;
-	color: #F79327;
-	letter-spacing: 2px;
-    background-color: rgba(0, 255, 255, 0.37);
-        }
+
         img{
             border-radius: 10px;
             border: 3px solid;
             border-color: #f3edea;
         }
         & :hover{
-            opacity: 0.5;
+            transform: scale(1.1);
         }
 
     }

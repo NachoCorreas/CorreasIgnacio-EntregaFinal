@@ -4,6 +4,7 @@
         gap: 30px;
         margin-right: 10px;
     }
+    
     .listNav li{
         font-size: 25px;
         font-weight: 600;
@@ -26,6 +27,26 @@
     }
     .boton{
         font-size: 30px;
+    }
+    .coach{
+        display: flex;
+         flex-direction: column;
+         gap: 55px;
+         justify-content: flex-start;
+     }
+     .botones{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .videoCoach {
+        iframe{
+            width: 900px;
+            height: 412px;
+        }
+       
     }
     .retroshoes{
         display: flex;

@@ -1,0 +1,14 @@
+@media (max-width:425px){
+    main{
+        .coach{
+            display: grid;
+            grid-template-areas:
+            "video video video video"
+            "botones botones botones botones"
+            "botones botones botones botones"
+            "texto texto texto texto";
+    
+        }
+    }
+   
+}

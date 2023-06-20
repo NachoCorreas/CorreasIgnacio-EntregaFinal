@@ -5,7 +5,6 @@
 
 }
 @media (min-width:768px){
-    
     nav{
         justify-content: space-around;
     }
@@ -18,20 +17,26 @@
         width: 560px;
         height: 315px
     }
+   
     .coach{
-        height: 100vh;
+        display: flex;
+         flex-direction: column;
+         gap: 55px;
+         justify-content: flex-start;
+     }
+     .botones{
+        padding: 10px;
         display: flex;
         flex-direction: column;
-        gap: 200px;
-        justify-content: flex-start;
-    }
-    .botones{
         align-items: center;
-        flex-direction: row;
         justify-content: center;
-    }
+     }
+     .CoachTxt{
+        font-size: larger;
+        text-align: center;
+     }
     .botones button{
-        width: 25%;
+        width: 200px;
         
     }
     .titulo .tituloHome h2{

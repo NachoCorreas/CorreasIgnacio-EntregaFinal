@@ -1,0 +1,29 @@
+.despliegue{
+    width: 50%;
+    background-color: #FF9800;
+    li{
+        font-size: medium;
+    }
+}
+.card-title{
+    font-weight: 500;
+    font-size: large;
+}
+.ingreso {
+    img{
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+   
+}
+.card-text{
+    font-size: medium;
+}
+.card-body{
+    background-color: #FF9800;
+}
+.centrado{
+    @include flex(column,none,center,center,15px)
+}
